@@ -1,0 +1,8 @@
+parameters:
+    ezpublish.fieldType.ezidml.converter.class: %ezpublish.fieldType.eznull.converter.class%
+    
+services:
+    ezpublish.fieldType.ezidml.converter:
+        class: %ezpublish.fieldType.ezidml.converter.class%
+        tags:
+            - {name: ezpublish.storageEngine.legacy.converter, alias: ezidml, lazy: true, callback: '::create'}

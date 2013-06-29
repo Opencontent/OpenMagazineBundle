@@ -1,0 +1,10 @@
+parameters:
+    ezpublish.fieldType.ezidml.class: %ezpublish.fieldType.eznull.class%
+
+services:
+    ezpublish.fieldType.ezidml:
+        class: %ezpublish.fieldType.ezidml.class%
+        parent: ezpublish.fieldType
+        arguments: [ "ezidml" ]
+        tags:
+            - {name: ezpublish.fieldType, alias: ezidml}

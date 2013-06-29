@@ -1,0 +1,20 @@
+{
+    "name": "opencontent/openmagazinebundle",
+    "description": "OpenMagazine bundle for eZ Publish",
+    "license": "GPL-2.0",
+    "authors": [
+        {
+            "name": "OpenContent",
+            "homepage": "http://www.opencontent.it/"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.3.3",
+        "ezsystems/ezpublish-kernel": "*"
+    },
+    "autoload": {
+        "psr-0": {"OpenContent\\OpenMagazineBundle": ""}
+    },
+    "target-dir": "OpenContent/OpenMagazineBundle"
+}
